@@ -1,18 +1,12 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { Text } from '../../components';
 import theme from '../../themes';
 
-/**
- * Home Screen - main dashboard for the app
- * 
- * @param {Object} props - Component props
- * @param {Object} props.navigation - Navigation object
- */
-const HomeScreen = ({ navigation }) => {
+const SearchScreen = () => {
   return (
     <View style={styles.container}>
-      <Text variant="h1" style={styles.text}>Home Screen</Text>
+      <Text variant="h1" style={styles.text}>Search Screen</Text>
     </View>
   );
 };
@@ -29,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default SearchScreen;

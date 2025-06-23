@@ -33,10 +33,10 @@ const RegistrationScreen = ({ navigation }) => {
     setTimeout(() => {
       setIsLoading(false);
       
-      // Navigate to home screen after successful registration
+      // Navigate to main app with bottom tabs after successful registration
       navigation.reset({
         index: 0,
-        routes: [{ name: 'Home' }],
+        routes: [{ name: 'MainApp' }],
       });
       
       // API integration would go here
@@ -45,7 +45,7 @@ const RegistrationScreen = ({ navigation }) => {
       //   const response = await businessService.register(data);
       //   navigation.reset({
       //     index: 0,
-      //     routes: [{ name: 'Home' }],
+      //     routes: [{ name: 'MainApp' }],
       //   });
       // } catch (error) {
       //   // Handle error

@@ -81,10 +81,10 @@ const OTPScreen = ({ navigation, route }) => {
         // Navigate to registration for new business
         navigation.navigate('Registration');
       } else {
-        // Navigate to home for existing business
+        // Navigate to main app with bottom tabs
         navigation.reset({
           index: 0,
-          routes: [{ name: 'Home' }],
+          routes: [{ name: 'MainApp' }],
         });
       }
       
@@ -97,7 +97,7 @@ const OTPScreen = ({ navigation, route }) => {
       //   } else {
       //     navigation.reset({
       //       index: 0,
-      //       routes: [{ name: 'Home' }],
+      //       routes: [{ name: 'MainApp' }],
       //     });
       //   }
       // } catch (error) {

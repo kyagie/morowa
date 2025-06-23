@@ -52,28 +52,50 @@ const MainTabNavigator = () => {
           paddingTop: 5,
           height: 60,
         },
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: theme.colors.background,
+          elevation: 0, // Android
+          shadowOpacity: 0, // iOS
+          borderBottomWidth: 0,
+        },
+        headerTintColor: theme.colors.primary,
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
       })}
     >
       <Tab.Screen 
         name="HomeTab" 
         component={HomeScreen} 
-        options={{ title: 'Home' }}
+        options={{ 
+          title: 'Home',
+          headerTitle: 'Morowa',
+        }}
       />
       <Tab.Screen 
         name="OrdersTab" 
         component={OrdersScreen} 
-        options={{ title: 'Orders' }}
+        options={{ 
+          title: 'Orders',
+          headerTitle: 'My Orders',
+        }}
       />
       <Tab.Screen 
         name="SearchTab" 
         component={SearchScreen} 
-        options={{ title: 'Search' }}
+        options={{ 
+          title: 'Search',
+          headerTitle: 'Find Products', 
+        }}
       />
       <Tab.Screen 
         name="MoreTab" 
         component={MoreScreen} 
-        options={{ title: 'More' }}
+        options={{ 
+          title: 'More',
+          headerTitle: 'More Options', 
+        }}
       />
     </Tab.Navigator>
   );
